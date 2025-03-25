@@ -9,7 +9,8 @@ export default defineNuxtConfig({
   typescript: { strict: true },
   runtimeConfig: {
     public: {
-      VITE_SALT_SECRET: process.env.VITE_SALT_SECRET || '10',
+      NUXT_PUBLIC_SALT_SECRET: process.env.NUXT_PUBLIC_SALT_SECRET || '',
+      NUXT_PUBLIC_USERS_URL: process.env.NUXT_PUBLIC_USERS_URL || '',
     }
   }
 })
